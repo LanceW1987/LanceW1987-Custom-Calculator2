@@ -1,20 +1,24 @@
-# A Round Calculator — Android + iPhone
+# A Round Calculator — Store-Ready Mobile Project
 
-This is a ready-to-host Progressive Web App (PWA) made from the supplied HTML calculator. It can be installed on **Android and iPhone** from a supported browser and runs like an app without needing an app store.
+This project packages the calculator as a mobile-friendly PWA and Capacitor app shell for Android and iOS.
 
-## Install on a phone
-1. Put the contents of `www/` on an HTTPS website.
-2. Open the website on the phone.
-3. Android: use the browser's **Add to Home screen / Install app** option.
-4. iPhone: in Safari, use **Share → Add to Home Screen**.
+## Build
+1. Install Node.js.
+2. Run `npm install`.
+3. Run `npx cap add android` and/or `npx cap add ios` if native folders are not present.
+4. Run `npm run sync`.
+5. Android: `npx cap open android` and build an APK/AAB in Android Studio.
+6. iOS: `npx cap open ios` and build/archive in Xcode on macOS.
 
-## Native store versions
-The same `www/index.html` can also be wrapped with Capacitor for Google Play and Apple App Store builds. Building/signing the native packages requires Android Studio for Android and Xcode on macOS for iPhone.
-
-## Included
-- `www/index.html` — calculator
-- `www/manifest.webmanifest` — installable-app metadata
-- `www/sw.js` — offline caching
-- `www/icon-192.png` and `www/icon-512.png` — app icons
-
-The original calculator features are preserved, including arithmetic, keyboard input, color customization, preset palettes, and reset-to-default colors.
+## Design updates
+- Polished mobile-first calculator layout
+- Store-style app branding and icon
+- Safe-area support for modern iPhone/Android devices
+- Larger, more comfortable touch targets
+- Refined display, shadows, typography, and spacing
+- Mobile bottom-sheet customization panel
+- Ten quick color palettes
+- Custom colors saved locally
+- Offline caching
+- Light and dark palette support
+- Haptic tap feedback when supported
